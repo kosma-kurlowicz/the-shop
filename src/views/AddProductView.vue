@@ -1,7 +1,3 @@
-<script setup>
-import { API_URL, AXIOS_URL } from '../plugins/axios.js'
-</script>
-
 <template>
   <main class="add-product-page">
     <section>
@@ -144,6 +140,9 @@ hr
 </style>
 
 <script>
+import axios from 'axios'
+import { API_URL } from '../plugins/axios.js'
+
 export default {
   data() {
     return {
@@ -162,7 +161,7 @@ export default {
   },
   methods: {
     saveProduct() {
-      this.axios
+      axios
         .post(API_URL + "new", {
           productData: this.formData
         })
