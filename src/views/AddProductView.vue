@@ -1,9 +1,3 @@
-<script setup>
-import { RouterLink } from 'vue-router'
-import axios from 'axios'
-import { API_URL, AXIOS_URL } from '../plugins/axios.js'
-</script>
-
 <template>
   <main class="add-product-page">
     <section>
