@@ -2,7 +2,6 @@
 import { onMounted } from 'vue'
 import { RouterLink } from 'vue-router'
 import { API_URL, AXIOS_URL } from '../plugins/axios.js'
-import axios from 'axios'
 </script>
 
 <template>
